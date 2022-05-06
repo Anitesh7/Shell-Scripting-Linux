@@ -1,0 +1,12 @@
+echo "Enter The File Name:"
+read sf
+if [ -e $sf ]
+then
+ echo "Original File:"
+ cat $sf
+ cat "$sf" | tr '[a-z]' '[A-Z]'>new
+ echo "Modified File:"
+ cat new
+else
+ echo "File Does Not Exist !! "
+fi

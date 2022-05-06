@@ -1,0 +1,13 @@
+echo "Enter basic Salary"
+read basic
+if [ $basic -lt 1500 ] 
+then
+    hra=`echo "scale=2; $basic*10/100" | bc`
+    da=`echo "scale=2; $basic*90/100" | bc`
+else 
+    hra=500
+    da=`echo "scale=2; $basic*98/100" | bc`
+fi
+gsalary=`echo "scale=2; $basic + $hra + $da"|bc` 
+echo "Gross salary = Rs. $gsalary"
+

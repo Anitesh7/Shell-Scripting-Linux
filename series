@@ -1,0 +1,7 @@
+echo "Enter the no : "
+read n
+for ((i=1; i<=n; i++))
+do
+d=$((i+2))
+echo -n $i" "$d" "
+done

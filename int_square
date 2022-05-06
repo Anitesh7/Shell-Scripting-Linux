@@ -1,0 +1,7 @@
+echo -n "Enter the first integer : "
+read n
+echo -n "Enter the second integer : "
+read m
+let p=($n**$m)
+echo "$n ^ $m" = $p
+

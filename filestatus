@@ -1,0 +1,38 @@
+echo "Enter file name:"
+read n
+if [ -e $n ]
+then
+ echo "File exists"
+else
+ echo "File does not exist"
+fi
+if [ -f $n ]
+then
+ echo "File is a regular file"
+else
+ echo "File is not a regular file"
+fi
+if [ -d $n ]
+then
+ echo "File is a directory"
+else
+ echo "File is not a directory"
+fi
+if [ -r $n ]
+then
+ echo "File has readable permission"
+else
+ echo "File does not have readable permission"
+fi
+if [ -w $n ]
+then
+ echo "File has writeable permission"
+else
+ echo "File does not have writeable permission"
+fi
+if [ -x $n ]
+then
+ echo "File has execute permission"
+else
+ echo "File does not have execute permission"
+fi

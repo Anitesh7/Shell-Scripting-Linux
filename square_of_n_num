@@ -1,0 +1,8 @@
+echo "Enter the no : "
+read num
+for((i=1; i<=$num; i++))
+do
+sq=$((i*i))
+echo "$i, The square of $i="$sq
+done
+
